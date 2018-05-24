@@ -1,0 +1,46 @@
+<body>
+<nav class="navbar navbar-default">
+  <div class="container" >
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" id="brand" href="Home.html" routerLink="/home">Code & Work</a>
+    </div>
+
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="CatalogueOut.html" routerLink="/catalogue-out">Catalogue</a></li>
+        <!-- <li><a href="#"></a></li> -->
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="Registration.html" routerLink="/registration">Sign In <i class="fas fa-user-plus"></i></a></li>
+        <li><a href="LogIn.html" routerLink="/login">Log In <i class="fas fa-user"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container form">
+  <form>
+    <div class="form-group">
+      <label for="Email">Email address</label>
+      <input [(ngModel)]="email" type="email" class="form-control" id="Email" placeholder="Email">
+    </div>
+    <div class="form-group">
+      <label for="Password">Password</label>
+      <input [(ngModel)]="password" type="password" class="form-control" id="Password" placeholder="Password">
+    </div>
+    <span id="register">
+        <button type="submit" class="btn" id="register"><a href="User.html" routerLink="/user-page">Log In</a></button>
+        Don't have an account? Sign in <a href="Registration.html" routerLink="/registration" class="linked">here.</a>
+      </span>
+
+  </form>
+</div>
+</body>

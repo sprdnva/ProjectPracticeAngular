@@ -1,0 +1,62 @@
+body {
+  font-family: 'Comfortaa', cursive;
+  background-image: url("https://images.unsplash.com/photo-1520085601670-ee14aa5fa3e8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cdc4d332eab7ae54a6449ef4918730f5&auto=format&fit=crop&w=1650&q=80");
+  background-size: cover;
+}
+
+html {
+  height: 100%;
+}
+
+div#carousel-example-generic.carousel.slide{
+  min-width: 60%;
+  max-width: 60%;
+  min-height: 35%;
+  max-height: 400px;
+  margin: 10% auto;
+  text-align: center;
+  background: radial-gradient(#f8f8f8e0,  #f8f8f800);
+  border-radius: 25px;
+}
+
+.item {
+  height: auto;
+}
+
+.carousel-control.right, .carousel-control.left {
+  border-radius: 25px;
+  color: black;
+}
+
+.carousel-control.right{
+  background: linear-gradient(to right, #f8f8f800 , #f8f8f8e0) !important;
+}
+
+.carousel-control.left{
+  background: linear-gradient(to left, #f8f8f800 , #f8f8f8e0) !important;
+}
+
+.carousel-control.right:hover, .carousel-control.left:hover,
+.carousel-control.left:focus:hover, .carousel-control.right:focus:hover{
+  opacity: 1;
+  color: black;
+}
+
+.carousel-control.right:focus, .carousel-control.left:focus {
+  opacity: 0.5;
+  color: black;
+}
+
+.item.active {
+  min-height: 400px;
+  max-height: 400px;
+
+}
+
+ol.carousel-indicators .active {
+  background-color: #525252;
+}
+
+ol.carousel-indicators li {
+  border: 1px solid #525252;
+}
