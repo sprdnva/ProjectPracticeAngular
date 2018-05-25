@@ -8,6 +8,7 @@ nav.navbar.navbar-default {
   border-color: #f8f8f800;
   border: 1px solid #abaaaa;
   border-radius: 0;
+  z-index: 3;
 }
 
 .navbar-default .nav.navbar-nav>li>a, a>li {
@@ -166,4 +167,74 @@ table.coursesItem {
   width: 8em;
   height: 8em;
   margin: 5px;
+}
+
+.sidebar {
+  min-width: 23%;
+  max-width: 23%;
+  background-color: #222;
+  position: fixed;
+  top: 0;
+  /* left: -240px; */
+  margin-top: 51px;
+  min-height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #eee;
+  font-size: 14px;
+  z-index: 1;
+}
+
+.sidebar>div>a {
+  color: #fafafa;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.sidebarHeader {
+  margin: 5px 5px 5px 0;
+  padding: 5px 5px 5px 0;
+  text-align: center;
+}
+
+.sidebarHeader p {
+  margin-top: 5px;
+  padding-left: 17px;
+  text-align: left;
+}
+
+nav>ul.nav-pills>li>a {
+  border-radius: 0;
+  color: #fafafa;
+  border-left: 2px solid #fafafa;
+}
+
+nav>ul.nav-pills>li>a:hover {
+  color: #222;
+  border-left: 2px solid #222;
+}
+
+.taskWrapper {
+  z-index: 1;
+  width: 77%;
+  margin-left: auto;
+}
+
+.top-tools {
+  border-bottom: 1px solid #D8D8D8;
+  padding: 1em 0;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.taskPlayer {
+  padding: 20px 4px 4px;
+}
+
+.taskPlayerHead>p{
+  padding: 0 15px;
+  font-size: 16px;
+  font-weight: 500;
 }
