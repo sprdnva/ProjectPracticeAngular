@@ -146,6 +146,10 @@ table.coursesItem {
   padding: 5px;
 }
 
+.courseList>li:hover {
+  box-shadow: 0 0 0 0 rgba(0,0,0,0.24), 0 5px 15px 0 rgba(0,0,0,0.19);
+}
+
 .courseList>li>a {
   color: black;
   font-weight: 700;
