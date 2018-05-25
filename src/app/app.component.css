@@ -95,14 +95,71 @@ div .userRating {
 }
 
 hr.myHr {
-  border: 0;
-  height: 0.5px;
-  background: gray;
-  background-image: linear-gradient(to right, #ccc, #abaaaa, #ccc);
+    border: 0;
+    height: 0.5px;
+    background: gray;
+    background-image: linear-gradient(to right, #ccc, #abaaaa, #ccc);
 }
 
-
-table.coursesItem  {
-
+table.coursesItem {
   display: inline-table;
+}
+
+.courseList {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 0px;
+  font-size: 1em;
+  margin-bottom: 1.25em;
+  line-height: 1.6;
+}
+
+.courseList ol {
+  list-style: none;
+  font-size: 1em;
+  margin-bottom: 1.25em;
+  line-height: 1.6;
+}
+
+.courseList>li>ol#course2, .courseList>li>ol#course1 {
+  padding-left: 0;
+}
+
+.courseList>li a:hover {
+  color: #337ab7;
+}
+
+.courseList>li a {
+  color: #abaaaa;
+}
+
+.courseList>li {
+  width: 30%;
+  position: relative;
+  text-align: center;
+  border: 1px solid #abaaaa;
+  border-radius: 3px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.courseList>li>a {
+  color: black;
+  font-weight: 700;
+  font-size: 1.3em;
+}
+
+.JsJunior>a>img {
+  width: 8em;
+  height: 8em;
+  margin: 5px;
+}
+
+.CppJunior>a>img {
+  width: 8em;
+  height: 8em;
+  margin: 5px;
 }
