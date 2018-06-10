@@ -36,7 +36,13 @@ import { CatalogueOutComponent } from './catalogue-out/catalogue-out.component';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [CompanyService, UserService, LocalStorageService],
+  providers: [CompanyService, UserService, SignOut, LocalStorageService, UserCoursesService, CourseService, TaskService,
+    CompletedTaskService,
+  {
+  provide : HTTP_INTERCEPTORS,
+    useClass : AuthInterceptor,
+  multi : true,
+}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
